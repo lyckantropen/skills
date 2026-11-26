@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Regenerate the skills table in README.md between the skills-table markers,
-# reading name/description from each skills/*/SKILL.md frontmatter.
+# reading name/summary/description from each skills/*/SKILL.md frontmatter.
+# The table shows the short 'summary'; it falls back to 'description'.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -14,6 +15,8 @@ for skill_md in skills/*/SKILL.md; do
     meta=$(sed -n '2,/^---$/p' "$skill_md" | sed '$d')
     name=$(printf '%s\n' "$meta" | sed -n 's/^name:[[:space:]]*//p' | head -n 1)
     desc=$(printf '%s\n' "$meta" | sed -n 's/^description:[[:space:]]*//p' | head -n 1)
+    summary=$(printf '%s\n' "$meta" | sed -n 's/^summary:[[:space:]]*//p' | head -n 1)
+    [ -n "$summary" ] || summary="$desc"
 
     # The CLI requires the frontmatter name to match the directory name.
     if [ -z "$name" ] || [ "$name" != "$(basename "$dir")" ]; then
@@ -21,7 +24,7 @@ for skill_md in skills/*/SKILL.md; do
         continue
     fi
     [ -n "$desc" ] || desc="_(no description)_"
-    printf '| [`skills/%s/`](./skills/%s/) | %s |\n' "$name" "$name" "$desc" >> "$entries"
+    printf '| [`skills/%s/`](./skills/%s/) | %s |\n' "$name" "$name" "$summary" >> "$entries"
 done
 
 tmp=$(mktemp)
