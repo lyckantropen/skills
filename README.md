@@ -12,7 +12,7 @@ npx skills add lyckantropen/skills
 
 ### Design steers
 
-Seven "grilling" and "implement" sessions later, and your codebase is unrecognizable. AI agents close tasks fast and leave the design worse — each diff optimizes for "done," not for the structure holding it. These prompts help you fight back, turning design research and practice into principles an agent can walk and verdicts you can check. Distilled from decades of system and software research.
+Layering dozens of "grilling" and "implement" sessions made your codebase into a monster? AI agents close tasks fast and leave the design worse — each diff optimizes for "done," not for the structure holding it. These prompts help you fight back, turning design research and practice into principles an agent can walk and verdicts you can check. Distilled from decades of system and software research.
 
 **You invoke them** — the same speed that grew the mess never schedules its own cleanup.
 
