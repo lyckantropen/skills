@@ -18,6 +18,8 @@ Layering dozens of "grilling" and "implement" sessions made your codebase into a
 
 **Pressure** reviews each change before the agent builds it; **strain** notices small changes bending the same spot again and again; **collapse** deletes what the agent built that nothing uses.
 
+| Skill | What it does |
+| --- | --- |
 | [`skills/design-collapse/`](./skills/design-collapse/) | Cut a bloated design back down to what its intent requires |
 | [`skills/design-pressure/`](./skills/design-pressure/) | Rethink a tricky change before the agent builds it |
 | [`skills/design-strain/`](./skills/design-strain/) | Run when small requests keep turning into big changes in the same spot |
