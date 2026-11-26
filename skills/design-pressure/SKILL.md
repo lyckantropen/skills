@@ -1,29 +1,36 @@
 ---
 name: design-pressure
 summary: Pressure specs and in-flight designs
-description: Pressure a spec or in-flight design change and propose concrete before/after redesigns. Use when a change is complex or branchy, enters new design territory, seeds dependent designs, or the user asks for design review, redesign, or refactor feedback — skip for mechanical, trivial, or pure-reproduction work.
+description: Pressure a spec or in-flight design change and propose concrete before/after redesigns. Use when a change is complex or branchy, enters new design territory, seeds dependent designs, follows a grilling or design session that settled direction, or the user asks for design review, redesign, or refactor feedback — skip for mechanical, trivial, or pure-reproduction work.
 ---
 
 # design-pressure
 
+Agentic designs drift toward complexity; pressure scales it back before it bakes into code.
+
 **Spec** - a doc, ticket, issue, or PR description; any persistent artifact describing the intended design change: the input and the output of this procedure. If absent — including when the change lives only in conversation — the subject of pressure is the design change being discussed or planned.
 
-## Principles
+## Principles — highest stakes, broadest scope, largest change first
 
-* P-1: **Every touch is an opportunity** - structurally better, not just functionally correct; a touch the design needs anyway is the chance to leave it better shaped than found
-* P-2: **Complexity is a net loss** - adding complexity to satisfy a requirement is a design failure; a requirement only complexity can satisfy is suspect
+* P-1: **Complexity is a net loss** - adding complexity to satisfy a requirement is a design failure; a requirement only complexity can satisfy is suspect
+* P-2: **Every touch is an opportunity** - structurally better, not just functionally correct; a touch the design needs anyway is the chance to leave it better shaped than found
 * P-3: **Promote implicit to structural** - constraints via structure, contracts, or API shape rather than documentation, convention, or circumstance
-* P-4: **Special cases are design debt** - a general mechanism handles them
-* P-5: **Propose, don't criticize** - concrete redesign, not a smell test
-* P-6: **Elegance test** - would a reviewer say this snaps into place, or ask "why is it like this?"
-* P-7: **Sensitive code** - crossroads modules accumulate coupling; list them in the spec
-* P-8: **Locality** - future changes in one place; mirrored call sites signal the wrong design
-* P-9: **Narrowing over widening** - narrow valid states over defensive checks
+* P-4: **Information hiding** - a boundary hides the decision that could change, exposing dependents no more than they must know (an interface as large as what it hides hides nothing), justified by change already evidenced, not anticipated
+* P-5: **Locality of change** - concentrate what is likely to change; mirrored call sites signal the wrong design
+* P-6: **Ad-hoc special cases are design debt** - a general mechanism handles them
+* P-7: **Narrowing over widening** - a new case is decided where it originates — up the call stack, at the boundary, in the type — so leaves stay branch-free; leaf-level defensive checks are widening: a case that should have been decided higher
+* P-8: **Behavior over spec** - what the current design does is the ground truth to improve on; a spec describing behavior the code doesn't have is itself a tension
+* P-9: **Price the proxy** - a change adding enforcement (a gate, lint rule, wrapper) must ask whether the enforcement signal is the goal; once it is, the goal leaves the loop
+* P-10: **Crossroads code** - modules every change flows through accumulate coupling; list them in the spec
+* P-11: **Propose, don't criticize** - concrete redesign, not a smell test
+* P-12: **Dissolve, don't choose** - a verdict resting on a trade-off must name the assumption behind the dilemma that is no longer true, not weigh the horns
+* P-13: **Prefer the reversible after** - when two afters both snap in, take the one you can undo, and state what it preserves
+* P-14: **Elegance test** - would a reviewer say this snaps into place, or ask "why is it like this?"
 
 ## Procedure
 
 1. **Context** - read the spec, relevant tickets or issues, and the relevant code area
-2. **Pressure pass** - walk P-1 -> P-9 against the current or proposed design; note every tension
+2. **Pressure pass** - walk P-1 -> P-14 against the current or proposed design; note every tension
 3. **Propose** - for each tension: the principle it violates, a concrete before, after, and why the after snaps in. If the pass finds no tensions, say so and stop
 4. **Confirm** - stop; user approves the direction before writing
 5. **Record** - track each agreed decision, update the spec (creating it if none exists), reshape ticket/issue graph if necessary
