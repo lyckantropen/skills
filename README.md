@@ -1,4 +1,4 @@
-# skills
+# lyckantropen's skills
 
 Agentic skills, installable with the [skills CLI](https://github.com/vercel-labs/skills).
 
