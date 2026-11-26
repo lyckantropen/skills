@@ -32,4 +32,4 @@ Agentic designs drift toward complexity; pressure scales it back before it bakes
 2. **Pressure pass** - walk P-1 -> P-13 against the current or proposed design; note every tension
 3. **Propose** - for each tension: the principle it violates, a concrete before, after, and why the after snaps in. If the pass finds no tensions, say so and stop
 4. **Confirm** - stop; user approves the direction before writing
-5. **Record** - track each agreed decision, update the spec (creating it only if the user wants the decisions persisted), reshape ticket/issue graph if necessary
+5. **Record** - update the spec if the user wants the decisions persisted

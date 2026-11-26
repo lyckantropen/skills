@@ -21,7 +21,7 @@ A workaround a change left behind — a diff that landed by adding a case, guard
 _Avoid_: workaround, hack
 
 **Bend record**:
-The artifact a design-strain run writes: mined bends, clustered by a stated identity rule; kept or discarded at hand-off.
+The mined bends a design-strain run clusters by an identity rule stated before reading them; kept or discarded at hand-off.
 _Avoid_: evidence file
 
 **Change stream**:
