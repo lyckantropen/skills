@@ -6,9 +6,9 @@ description: Read the accumulated bends in a standing design and decide whether 
 
 # design-strain
 
-Strain, not wrongness: a design fails by accumulating bends — every individually-fine change bends the same way around the same structure. The bends are behavioral evidence, left by changes optimizing the diff; the judge of any reshape is the intent the design is for. Sister to `design-pressure`, which gates single changes; where the same tension keeps firing across those passes, the standing design becomes the subject.
+Strain, not wrongness: a design fails by accumulating bends — every individually-fine change bends the same way around the same structure. Sister to `design-pressure`, which gates single changes; where the same tension keeps firing across those passes, the standing design becomes the subject.
 
-**Bend record** - the run's written evidence: recurring workarounds and the tensions they answered, mirrored call sites, paths every change touches. Witness, not judge — read it against the intent statement (procedure 1); the decision record — why the design is like this — supplies intent candidates, fossils included.
+**Bend record** - the run's written evidence: the mined bends and the tensions they answered. Witness, not judge — read it against the intent statement (procedure 1).
 
 ## Principles — broadest scope, largest change potential, highest stakes, biggest consequences first
 
@@ -26,7 +26,7 @@ Strain, not wrongness: a design fails by accumulating bends — every individual
 
 ## Procedure
 
-1. **Intent** - state what the design is for as numbered observable conditions (I-1, I-2, ...), each checkable by watching the system run rather than by inspecting its structure: supplied by the operator, recovered from the decision record as candidates the user confirms, or assumed and confirmed as an assumption
+1. **Intent** - state the intent statement: what the design is for as numbered observable conditions (I-1, I-2, ...), each checkable by watching the system run rather than by inspecting its structure: supplied by the operator, recovered from the decision record — why the design is like this, fossils included — as candidates the user confirms, or assumed and confirmed as an assumption
 2. **Evidence** - mine the bends — hot paths (files touched by many commits), workaround-shaped changes (diffs landing as a case, guard, flag, or parameter at a call site instead of at the origin), mirrored call sites (near-identical blocks across files) — keeping them as the bend record if the run proceeds past classification; before clustering, state the identity rule, what counts as the same tension recurring — the least-evidenced choice in the record, so explicit rather than assumed
 3. **Confirm strain** - walk S-1 -> S-11 over the clusters, noting what each principle rules out or flags; then classify each cluster — the design's, one change's, an honest concept's, or the org chart's — with evidence; if none is the design's, say so and stop
 4. **Target** - the operating pattern the bends point at, each element citing the I-numbers it serves; name the loop that moves and the sacrifice
