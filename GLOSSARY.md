@@ -33,5 +33,5 @@ A numbered list of observable conditions stating what a design is for; the crite
 _Avoid_: spec — the spec is a candidate source for one, not the statement itself
 
 **Candidate verdict**:
-The per-candidate output of design-collapse's indict step: callers found, co-change evidence, intent conditions served or disserved, and the call.
+The per-candidate output of design-collapse's indict step: dependents found, co-change evidence, intent conditions served or disserved, and the call.
 _Avoid_: finding, smell

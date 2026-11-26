@@ -16,7 +16,7 @@ npx skills update   # refresh installed skills later
 
 AI agents close tasks fast and leave the design worse — each diff optimizes for "done," not for the structure holding it. These gates fight back, turning design research and practice into principles an agent can walk and verdicts you can check. You invoke them — the same speed that grew the mess never schedules its own cleanup. Pressure reviews each change before the agent builds it; strain notices small changes bending the same spot again and again; collapse deletes what the agent built that nothing uses.
 
-| [`skills/design-collapse/`](./skills/design-collapse/) | Cut a bloated codebase back down to what's actually used |
+| [`skills/design-collapse/`](./skills/design-collapse/) | Cut a bloated design back down to what its intent requires |
 | [`skills/design-pressure/`](./skills/design-pressure/) | Rethink a tricky change before the agent builds it |
 | [`skills/design-strain/`](./skills/design-strain/) | Run when small requests keep turning into big changes in the same spot |
 
