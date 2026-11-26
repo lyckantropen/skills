@@ -18,9 +18,9 @@ Layering dozens of "grilling" and "implement" sessions made your codebase into a
 
 | Skill | What it does |
 | --- | --- |
-| [`skills/design-collapse/`](./skills/design-collapse/) | Cut a bloated design back down to what its intent requires |
-| [`skills/design-pressure/`](./skills/design-pressure/) | Rethink a tricky change before the agent builds it |
-| [`skills/design-strain/`](./skills/design-strain/) | Run when small requests keep turning into big changes in the same spot |
+| `design-pressure` | Rethink a tricky change before the agent builds it |
+| `design-strain` | Run when small requests keep turning into big changes in the same spot |
+| `design-collapse` | Cut a bloated design back down to what its intent requires |
 
 ### Examples
 
