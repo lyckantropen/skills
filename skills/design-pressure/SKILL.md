@@ -22,15 +22,14 @@ Agentic designs drift toward complexity; pressure scales it back before it bakes
 * P-8: **Behavior over spec** - what the current design does is the ground truth to improve on; a spec describing behavior the code doesn't have is itself a tension
 * P-9: **Price the proxy** - a change adding enforcement (a gate, lint rule, wrapper) must ask whether the enforcement signal is the goal; once it is, the goal leaves the loop
 * P-10: **Crossroads code** - modules every change flows through accumulate coupling; list them in the spec
-* P-11: **Propose, don't criticize** - concrete redesign, not a smell test
-* P-12: **Dissolve, don't choose** - a verdict resting on a trade-off must name the assumption behind the dilemma that is no longer true, not weigh the horns
-* P-13: **Prefer the reversible after** - when two afters both snap in, take the one you can undo, and state what it preserves
-* P-14: **Elegance test** - would a reviewer say this snaps into place, or ask "why is it like this?"
+* P-11: **Dissolve, don't choose** - a verdict resting on a trade-off must name the assumption behind the dilemma that is no longer true, not weigh the horns
+* P-12: **Prefer the reversible after** - when two afters both snap in, take the one you can undo, and state what it preserves
+* P-13: **Elegance test** - would a reviewer say this snaps into place, or ask "why is it like this?"
 
 ## Procedure
 
 1. **Context** - read the spec, relevant tickets or issues, and the relevant code area
-2. **Pressure pass** - walk P-1 -> P-14 against the current or proposed design; note every tension
+2. **Pressure pass** - walk P-1 -> P-13 against the current or proposed design; note every tension
 3. **Propose** - for each tension: the principle it violates, a concrete before, after, and why the after snaps in. If the pass finds no tensions, say so and stop
 4. **Confirm** - stop; user approves the direction before writing
-5. **Record** - track each agreed decision, update the spec (creating it if none exists), reshape ticket/issue graph if necessary
+5. **Record** - track each agreed decision, update the spec (creating it only if the user wants the decisions persisted), reshape ticket/issue graph if necessary
