@@ -8,7 +8,7 @@ description: Gate a standing design that is bloated — especially by AI agents 
 
 Bloat, not wrongness: the design carries more than its intent requires — fatter structure and fatter behavior (states, branches, guards) alike — typically grown by agents, whose cost function is the diff and whose revealed intent is "maximize closed tasks," not the user's. Sister to `design-strain` (the design deforms) and `design-pressure` (a change enters); this skill subtracts.
 
-## Principles
+## Principles — broadest scope, largest change potential, highest stakes, biggest consequences first
 
 * C-1: **Pays rent or it goes** - the status quo must justify itself by evidenced utility to the whole; that it keeps running is observation, not desert
 * C-2: **Behavior is the witness, intent the judge** - that the design does something licenses observing it, never keeping it; the change stream's revealed intent is the diff-maximizer's, so preserving the behavior preserves the corruption — the anchor is intent a human would re-approve

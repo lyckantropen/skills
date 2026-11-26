@@ -10,7 +10,7 @@ Strain, not wrongness: a design fails by accumulating bends — every individual
 
 **Bend record** - the run's written evidence: recurring workarounds and the tensions they answered, mirrored call sites, paths every change touches. Witness, not judge — read it against the intent statement (procedure 1); the decision record — why the design is like this — supplies intent candidates, fossils included.
 
-## Principles
+## Principles — broadest scope, largest change potential, highest stakes, biggest consequences first
 
 * S-1: **Smooth absorption is the trap** - every workaround landing without breakage is the trap's signature, not evidence of health; smooth operation is what keeps the superior design from ever being tried
 * S-2: **The bends are the license** - the recurring tensions themselves justify the reshape; no further proof of wrongness is required
