@@ -1,7 +1,7 @@
 ---
 name: design-strain
-summary: Gate a standing design that every change bends around
-description: Read the accumulated bends in a standing design and decide whether the design itself must move, emitting a target shape plus a first reversible move. Use when the same design tension recurs across several individually-fine changes, when workarounds accrete around one structure, when a change cannot land without bending, or the user asks whether the design itself must move — skip for judging a single change (design-pressure) or trimming bloat (design-collapse).
+summary: Run when small requests keep turning into big changes in the same spot
+description: Read the accumulated bends in a standing design and decide whether the design itself must move, emitting a target shape plus a first reversible move. Use when your own instructions to the agent keep dodging the same spot, when small asks keep landing as big diffs, when one area has grown expensive to touch though nothing is broken, or when you ask whether the design itself must move — skip for judging a single change (design-pressure) or trimming bloat (design-collapse).
 ---
 
 # design-strain

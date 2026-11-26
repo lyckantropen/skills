@@ -1,6 +1,6 @@
 ---
 name: design-pressure
-summary: Pressure specs and in-flight designs
+summary: Rethink a tricky change before the agent builds it
 description: Pressure a spec or in-flight design change and propose concrete before/after redesigns. Use when a change is complex or branchy, enters new design territory, seeds dependent designs, follows a grilling or design session that settled direction, or the user asks for design review, redesign, or refactor feedback — skip for mechanical, trivial, or pure-reproduction work.
 ---
 
