@@ -3,9 +3,8 @@
 ## README
 
 The README is the repo's front door: title, install command, and a skills table.
-Whenever a skill is added, renamed, or its frontmatter description changes,
-regenerate the table with `scripts/gen-index.sh` and commit it together with the
-change. Never hand-edit between the `skills-table` markers.
+The table is hand-maintained: whenever a skill is added, renamed, or its frontmatter
+summary changes, edit the table row in the same commit.
 
 ## Agent skills
 
