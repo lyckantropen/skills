@@ -20,3 +20,10 @@ The five canonical triage labels: `needs-triage`, `needs-info`, `ready-for-agent
 ### Domain docs
 
 Single-context: root `GLOSSARY.md` + `docs/adr/`. See `docs/agents/domain.md`.
+
+## Git workflow
+
+At the end of every turn that changed files, commit — one commit per turn;
+split into logical commits only when a turn mixes unrelated changes.
+At every [milestone](GLOSSARY.md), push to `origin`. If the push is rejected,
+fetch, rebase onto `origin/main`, and retry once; on a conflict, stop and report.
