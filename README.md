@@ -14,6 +14,8 @@ Layering dozens of "grilling" and "implement" sessions made your codebase into a
 
 **You invoke them** — the same speed that grew the mess never schedules its own cleanup.
 
+**Run them from the outside** — point the agent at the repo under assessment; don't launch it from inside that repo. Started inside, the agent first reads the target's own AGENTS.md, CLAUDE.md, skills and prompts as instructions, and the system being assessed steers the assessment. Run from outside, that prose stays what the skills treat it as: artefact — evidence of how the system is run, and under edit like any other structure.
+
 **Pressure** reviews each change before the agent builds it; **strain** notices small changes bending the same spot again and again; **collapse** deletes what the agent built that nothing uses.
 
 | Skill | What it does |
