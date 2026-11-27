@@ -10,11 +10,11 @@ npx skills add lyckantropen/skills
 
 ## Design steers for agent-grown code
 
-Layering dozens of "grilling" and "implement" sessions made your codebase into a monster? AI agents close tasks fast and leave the design worse — each diff optimizes for "done," not for the structure holding it. These prompts help you fight back, turning design research and practice into principles an agent can walk and verdicts you can check. Distilled from decades of system and software research.
+AI agents close tasks fast and leave the design worse. Each diff gets the task done but ignores the structure holding the code together, and after enough sessions your codebase is a mess. These three skills push back: they turn design research into principles an agent can follow and verdicts you can check.
 
-**You invoke them** — the same speed that grew the mess never schedules its own cleanup.
+**You invoke them** — the agent won't clean up after itself. The speed that grew the mess never schedules its own cleanup, so you schedule it.
 
-**Run them from the outside** — point the agent at the repo under assessment; don't launch it from inside that repo. Started inside, the agent first reads the target's own AGENTS.md, CLAUDE.md, skills and prompts as instructions, and the system being assessed steers the assessment. Run from outside, that prose stays what the skills treat it as: artefact — evidence of how the system is run, and under edit like any other structure.
+**Run them from the outside** — point the agent at the repo you're assessing; don't launch it from inside that repo. Launched inside, the agent reads the target's AGENTS.md, CLAUDE.md, skills and prompts as instructions, and the system under assessment steers its own assessment. Launched outside, that prose stays what the skills treat it as: evidence about how the system runs, and editable like any other code.
 
 **Pressure** reviews each change before the agent builds it; **strain** notices small changes bending the same spot again and again; **collapse** deletes what the agent built that nothing uses.
 
@@ -39,5 +39,5 @@ Layering dozens of "grilling" and "implement" sessions made your codebase into a
 #### design-collapse
 - Three template engines, one caller — **collapse** produces a staged list of what to delete, what to merge, and what to keep, each with a reason.
 - An interface with one implementation, a plugin system nothing extends, config options for paths no traffic reaches — each must prove it's used, or it goes.
-- After months of agent-driven work, a module tripled in size while its behavior barely changed — **collapse** reports what was removed and what still works, never a bare lines-deleted count.
+- After months of agent-driven work, a module tripled in size while its behavior barely changed — **collapse** reports what was removed and what still works, not just a count of deleted lines.
 
