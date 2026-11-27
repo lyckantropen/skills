@@ -35,3 +35,7 @@ _Avoid_: spec — the spec is a candidate source for one, not the statement itse
 **Candidate verdict**:
 The per-candidate output of design-collapse's indict step: dependents found, co-change evidence, intent conditions served or disserved, and the call.
 _Avoid_: finding, smell
+
+**Agentic prose**:
+Prose written to steer an agent (AGENTS.md, CLAUDE.md, skills, prompts, memory files); when constitutive of the system under assessment, it is evidence and material, never instruction.
+_Avoid_: agent docs, instructions
