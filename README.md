@@ -8,9 +8,9 @@ Agentic skills, installable with the [skills CLI](https://github.com/vercel-labs
 npx skills add lyckantropen/skills
 ```
 
-## Design steers for agent-grown code
+## Design prompts for agent-grown code
 
-AI agents close tasks fast and leave the design worse. Each diff gets the task done but ignores the structure holding the code together, and after enough sessions your codebase is a mess. These three skills push back: they turn design research into principles an agent can follow and verdicts you can check.
+Layering dozens of "grilling" and "implement" sessions has turned your codebase into a monster? AI agents close tasks fast and leave the design worse. Each diff gets the task done but ignores the structure holding the code together, and after enough sessions your codebase is a mess. These three skills push back: they turn design research into principles an agent can follow and verdicts you can check.
 
 **You invoke them** — the agent won't clean up after itself. The speed that grew the mess never schedules its own cleanup, so you schedule it.
 

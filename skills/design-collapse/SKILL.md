@@ -2,6 +2,7 @@
 name: design-collapse
 summary: Cut a bloated design back down to what its intent requires
 description: Gate a standing design that is bloated — especially by AI agents — and emit a staged deletion-and-collapse list of what vanishes, what merges into what, and what survives and why. Use when the design carries structure or behavior with no evidenced utility — speculative generality, one-implementation interfaces, pass-through layers, defensive branches for paths nobody exercises, duplicate mechanisms, ceremony — or the user asks to shrink or collapse the design — skip for code-level cleanup (reducing-entropy), single-change gating (design-pressure), or accumulated bends (design-strain).
+disable-model-invocation: true
 ---
 
 # design-collapse
